@@ -9,7 +9,7 @@
 
 import UIKit
 
-class AccountTable: UITableViewController {
+class CredentialTable: UITableViewController {
     
     struct Credential {
         let issuer: String
@@ -17,6 +17,10 @@ class AccountTable: UITableViewController {
     }
     
     var accounts = [Credential]()
+    
+    @IBAction func scanNFC(_ sender: Any) {
+        print("Scan NFC")
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         accounts.append(Credential(issuer: "Yubikey", account: "jens.utbult@yubikey.com"))

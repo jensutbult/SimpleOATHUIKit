@@ -9,13 +9,13 @@
         <!--Account List-->
         <scene sceneID="1g0-tR-Wik">
             <objects>
-                <tableViewController id="08b-Ab-b9X" customClass="AccountTable" customModule="SimpleOATHUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="08b-Ab-b9X" customClass="CredentialTable" customModule="SimpleOATHUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xPO-mO-pGT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountCell" textLabel="jZf-mT-NRc" detailTextLabel="wWJ-io-N4h" style="IBUITableViewCellStyleValue1" id="XlV-xX-DXT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountCell" textLabel="jZf-mT-NRc" style="IBUITableViewCellStyleDefault" id="XlV-xX-DXT">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XlV-xX-DXT" id="aNQ-J3-vqt">
@@ -23,14 +23,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jZf-mT-NRc">
-                                            <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wWJ-io-N4h">
-                                            <rect key="frame" x="350" y="12" width="44" height="20.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -46,7 +39,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Account List" id="ews-k7-nlZ">
-                        <barButtonItem key="rightBarButtonItem" title="Scan NFC" id="ZjT-hz-ftn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Scan NFC" id="ZjT-hz-ftn">
+                            <connections>
+                                <action selector="startNFCSession:" destination="08b-Ab-b9X" id="JIk-F0-RXx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOY-3e-g1h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

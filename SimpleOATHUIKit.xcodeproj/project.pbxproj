@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5154028B2487C631005D3695 /* libYubiKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515402882487C61B005D3695 /* libYubiKit.a */; };
-		515402912487CB91005D3695 /* AccountTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402902487CB91005D3695 /* AccountTable.swift */; };
+		515402912487CB91005D3695 /* CredentialTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402902487CB91005D3695 /* CredentialTable.swift */; };
 		5154F98224879AFC005D3695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154F98124879AFC005D3695 /* AppDelegate.swift */; };
 		5154F98424879AFC005D3695 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154F98324879AFC005D3695 /* SceneDelegate.swift */; };
 		5154F98924879AFC005D3695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5154F98724879AFC005D3695 /* Main.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		515402822487C61B005D3695 /* YubiKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YubiKit.xcodeproj; path = YubiKit/YubiKit/YubiKit.xcodeproj; sourceTree = "<group>"; };
 		5154028F2487C957005D3695 /* SimpleOATHUIKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleOATHUIKit.entitlements; sourceTree = "<group>"; };
-		515402902487CB91005D3695 /* AccountTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTable.swift; sourceTree = "<group>"; };
+		515402902487CB91005D3695 /* CredentialTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialTable.swift; sourceTree = "<group>"; };
 		5154F97E24879AFC005D3695 /* SimpleOATHUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOATHUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5154F98124879AFC005D3695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5154F98324879AFC005D3695 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				5154028F2487C957005D3695 /* SimpleOATHUIKit.entitlements */,
 				5154F98124879AFC005D3695 /* AppDelegate.swift */,
 				5154F98324879AFC005D3695 /* SceneDelegate.swift */,
-				515402902487CB91005D3695 /* AccountTable.swift */,
+				515402902487CB91005D3695 /* CredentialTable.swift */,
 				5154F98724879AFC005D3695 /* Main.storyboard */,
 				5154F98A24879B00005D3695 /* Assets.xcassets */,
 				5154F98C24879B00005D3695 /* LaunchScreen.storyboard */,
@@ -202,7 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5154F98224879AFC005D3695 /* AppDelegate.swift in Sources */,
-				515402912487CB91005D3695 /* AccountTable.swift in Sources */,
+				515402912487CB91005D3695 /* CredentialTable.swift in Sources */,
 				5154F98424879AFC005D3695 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
