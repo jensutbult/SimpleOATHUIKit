@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        YubiKitManager.shared.nfcSession.startIso7816Session()
         // Do any additional setup after loading the view.
     }
 

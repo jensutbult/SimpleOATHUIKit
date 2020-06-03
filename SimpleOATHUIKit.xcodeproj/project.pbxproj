@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5154028B2487C631005D3695 /* libYubiKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515402882487C61B005D3695 /* libYubiKit.a */; };
 		5154F98224879AFC005D3695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154F98124879AFC005D3695 /* AppDelegate.swift */; };
 		5154F98424879AFC005D3695 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154F98324879AFC005D3695 /* SceneDelegate.swift */; };
 		5154F98624879AFC005D3695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154F98524879AFC005D3695 /* ViewController.swift */; };
@@ -15,7 +16,26 @@
 		5154F98E24879B00005D3695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5154F98C24879B00005D3695 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		515402872487C61B005D3695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 515402822487C61B005D3695 /* YubiKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95C29611206247210091318B;
+			remoteInfo = YubiKit;
+		};
+		515402892487C61B005D3695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 515402822487C61B005D3695 /* YubiKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95885B2520A3187700828D02;
+			remoteInfo = YubiKitTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		515402822487C61B005D3695 /* YubiKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YubiKit.xcodeproj; path = YubiKit/YubiKit/YubiKit.xcodeproj; sourceTree = "<group>"; };
+		5154028F2487C957005D3695 /* SimpleOATHUIKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleOATHUIKit.entitlements; sourceTree = "<group>"; };
 		5154F97E24879AFC005D3695 /* SimpleOATHUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOATHUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5154F98124879AFC005D3695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5154F98324879AFC005D3695 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5154028B2487C631005D3695 /* libYubiKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		515402832487C61B005D3695 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				515402882487C61B005D3695 /* libYubiKit.a */,
+				5154028A2487C61B005D3695 /* YubiKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5154F97524879AFC005D3695 = {
 			isa = PBXGroup;
 			children = (
 				5154F98024879AFC005D3695 /* SimpleOATHUIKit */,
 				5154F97F24879AFC005D3695 /* Products */,
+				5154FBDC2487A226005D3695 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +87,7 @@
 		5154F98024879AFC005D3695 /* SimpleOATHUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5154028F2487C957005D3695 /* SimpleOATHUIKit.entitlements */,
 				5154F98124879AFC005D3695 /* AppDelegate.swift */,
 				5154F98324879AFC005D3695 /* SceneDelegate.swift */,
 				5154F98524879AFC005D3695 /* ViewController.swift */,
@@ -65,6 +97,14 @@
 				5154F98F24879B00005D3695 /* Info.plist */,
 			);
 			path = SimpleOATHUIKit;
+			sourceTree = "<group>";
+		};
+		5154FBDC2487A226005D3695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515402822487C61B005D3695 /* YubiKit.xcodeproj */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,12 +153,35 @@
 			mainGroup = 5154F97524879AFC005D3695;
 			productRefGroup = 5154F97F24879AFC005D3695 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 515402832487C61B005D3695 /* Products */;
+					ProjectRef = 515402822487C61B005D3695 /* YubiKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5154F97D24879AFC005D3695 /* SimpleOATHUIKit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		515402882487C61B005D3695 /* libYubiKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libYubiKit.a;
+			remoteRef = 515402872487C61B005D3695 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5154028A2487C61B005D3695 /* YubiKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = YubiKitTests.xctest;
+			remoteRef = 515402892487C61B005D3695 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5154F97C24879AFC005D3695 /* Resources */ = {
@@ -216,12 +279,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./YubiKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "./SimpleOATHUIKit/SimpleOATHUIKit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -270,11 +336,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./YubiKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "./SimpleOATHUIKit/SimpleOATHUIKit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -284,14 +353,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleOATHUIKit/SimpleOATHUIKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J6YR5MWMJ7;
+				DEVELOPMENT_TEAM = JQ24ZDH48X;
 				INFOPLIST_FILE = SimpleOATHUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = utbult.jens.SimpleOATHUIKit;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yubico.test.SimpleOATHUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,14 +373,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleOATHUIKit/SimpleOATHUIKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J6YR5MWMJ7;
+				DEVELOPMENT_TEAM = JQ24ZDH48X;
 				INFOPLIST_FILE = SimpleOATHUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = utbult.jens.SimpleOATHUIKit;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yubico.test.SimpleOATHUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
