@@ -19,7 +19,7 @@ class CredentialTable: UITableViewController {
         guard let nfcSession = YubiKitManager.shared.nfcSession as? YKFNFCSession else { return }
         
         // Observe changes to the nfc session
-        nfcSessionObserver = nfcSession.observe(\.iso7816SessionState, changeHandler: { [weak self] session, change in
+        nfcSessionObserver = nfcSession.observe(\.iso7816SessionState) { [weak self] session, change in
             // If session state is open unwrap the YKFKeyOATHServiceProtocol
             if session.iso7816SessionState == .open, let service = session.oathService {
                 let request = YKFKeyOATHCalculateAllRequest(timestamp: Date().addingTimeInterval(10))
@@ -38,7 +38,7 @@ class CredentialTable: UITableViewController {
                     }
                 }
             }
-        })
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
