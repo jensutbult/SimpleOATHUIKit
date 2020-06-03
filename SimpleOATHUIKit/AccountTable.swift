@@ -11,15 +11,15 @@ import UIKit
 
 class AccountTable: UITableViewController {
     
-    struct Account {
-        let name: String
+    struct Credential {
         let issuer: String
+        let account: String
     }
     
-    var accounts = [Account]()
+    var accounts = [Credential]()
     
     override func viewWillAppear(_ animated: Bool) {
-        accounts.append(Account(name: "Yubikey", issuer: "jens.utbult@yubikey.com"))
+        accounts.append(Credential(issuer: "Yubikey", account: "jens.utbult@yubikey.com"))
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,7 +29,7 @@ class AccountTable: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath)
         let account = accounts[indexPath.row]
-        cell.textLabel?.text = account.name
+        cell.textLabel?.text = account.account
         cell.detailTextLabel?.text = account.issuer
         return cell
     }
